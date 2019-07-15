@@ -26,7 +26,7 @@ To run, clone the repo and then execute the following commands:
 > python run.py
 ```
 
-This will setup the environment in [conda](https://docs.conda.io/en/latest/) train the model, save it, and then generate and plot some examples of reconstructions chosen randomly from the validation set. (like shown above)
+This will setup the environment in [conda](https://docs.conda.io/en/latest/), train the model, save it, and then generate and plot some examples of reconstructions chosen randomly from the validation set. (like shown above)
 
 The final trained tensorflow model checkpoints are saved in a `model/` directory.
 
