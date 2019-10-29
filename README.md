@@ -19,7 +19,7 @@ As you can see it can get pretty good at finding a signal in a lot of noise!
 
 To run, clone the repo and then execute the following commands:
 ```
-> conda create -n Denoise_AE python=3 pip
+> conda create -n Denoise_AE python=3.7 pip
 > source activate Denoise_AE
 > pip install -U setuptools
 > pip install -r requirements.txt
