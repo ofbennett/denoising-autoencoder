@@ -2,9 +2,15 @@
 
 By Oscar Bennett, 2019
 
+## Overview
+
 This is a [TensorFlow](https://www.tensorflow.org) implementation of a simple denoising autoencoder applied to the MNIST dataset. A denoising autoencoder is a type of encoding-decoding neural network which compresses data down to a lower dimensional representation in an unsupervised manner and can learn to remove noise in the process. A nice explanation of the theory can be found [here](http://deeplearning.net/tutorial/dA.html).
 
+## The Dataset
+
 The [MNIST dataset](https://en.wikipedia.org/wiki/MNIST_database) is a large collection of images of hand written digits. Its a nice and simple dataset to apply data science and machine learning methods to in order to demonstrate their use and benchmark their performance.
+
+## Example Results
 
 Some example results after applying gaussian noise to MNIST digit images of 0s and 5s is shown here:
 
@@ -16,6 +22,8 @@ Reconstruction:
 <img src=resources/recon.png width=100%>
 
 As you can see it can get pretty good at finding a signal in a lot of noise!
+
+## How To Run
 
 To run, clone the repo and then execute the following commands:
 ```
@@ -29,7 +37,11 @@ This will setup the environment in [conda](https://docs.conda.io/en/latest/), tr
 
 The final trained tensorflow model checkpoints are saved in a `model/` directory.
 
+## Method Details
+
 To improve the performance of the model I implemented a few basic model and training features such [batch normalisation](https://arxiv.org/abs/1502.03167), [early stopping](https://en.wikipedia.org/wiki/Early_stopping), [L2 regularisation](https://medium.com/datadriveninvestor/l1-l2-regularization-7f1b4fe948f2), and [encoding-decoding weight tying](https://stackoverflow.com/questions/36889732/tied-weights-in-autoencoder). If you're curious about these techniques just follow the links to discover more.
+
+## Variable Parameters
 
 The effect of these techniques as well as changes to the structure of the network can be explored by altering the hyperparameter variables near the top of the `run.py` file:
 
