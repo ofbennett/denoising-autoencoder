@@ -4,7 +4,7 @@ By Oscar Bennett, 2019
 
 ## Overview
 
-This is a [TensorFlow](https://www.tensorflow.org) implementation of a simple denoising autoencoder applied to the MNIST dataset. A denoising autoencoder is a type of encoding-decoding neural network which compresses data down to a lower dimensional representation in an unsupervised manner and can learn to remove noise in the process. A nice explanation of the theory can be found [here](http://deeplearning.net/tutorial/dA.html).
+This is a [TensorFlow](https://www.tensorflow.org) (1.x) implementation of a simple denoising autoencoder applied to the MNIST dataset. A denoising autoencoder is a type of encoding-decoding neural network which compresses data down to a lower dimensional representation in an unsupervised manner and can learn to remove noise in the process. A nice explanation of the theory can be found [here](http://deeplearning.net/tutorial/dA.html).
 
 ## The Dataset
 
